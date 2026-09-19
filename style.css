@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #202225;
+    color: white;
+}
+
+.container {
+    width: min(800px, 92%);
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    color: #b9bbbe;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   進捗
+========================= */
+
+.progress {
+    background: #2f3136;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #202225;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background: #5865f2;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+
+/* =========================
+   カテゴリー
+========================= */
+
+.category {
+    background: #2f3136;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.category h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   設定項目
+========================= */
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 16px;
+
+    margin-bottom: 10px;
+
+    background: #36393f;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+
+.setting:hover {
+    background: #40444b;
+}
+
+.setting:last-child {
+    margin-bottom: 0;
+}
+
+.setting strong {
+    font-size: 15px;
+}
+
+.setting p {
+    margin: 6px 0 0;
+
+    color: #b9bbbe;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   チェックボックス
+========================= */
+
+.check {
+    width: 22px;
+    height: 22px;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   完了メッセージ
+========================= */
+
+.complete {
+    background: #2f3136;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+.complete h2 {
+    margin-top: 0;
+}
+
+.complete p {
+    color: #b9bbbe;
+}
+
+
+/* =========================
+   スマホ対応
+========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .setting {
+        padding: 14px;
+    }
+
+    .setting strong {
+        font-size: 14px;
+    }
+
+    .setting p {
+        font-size: 12px;
+    }
+
+}
